@@ -31,6 +31,7 @@ body {
 
 .cabecalho__titulo {
     margin-top: 1em;
+    text-align: center;
 }
 
 .cabecalho__menu {
@@ -126,7 +127,7 @@ a:hover {
     height: 2em;
 }
 
-.rede__texto{
+.rede__texto {
     margin-top: 0.45em;
 }
 
@@ -141,7 +142,13 @@ a:hover {
 
 /*sobre nós*/
 
-.sn__historia{
+.sn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sn__historia {
     background-color: var(--cor-conteudo);
     display: flex;
     margin: 0.5em 23em;
@@ -152,8 +159,99 @@ a:hover {
     padding: 2em;
 }
 
-.sn__historia__texto{
+.sn__texto {
     font-size: 1.2em;
+}
+
+.sn__objetivo {
+    background-color: var(--cor-conteudo);
+    display: flex;
+    margin: 0.5em 23em;
+    text-align: left;
+    flex-direction: column;
+    border: 0.1em solid white;
+    justify-content: center;
+    padding: 2em;
+}
+
+.sn__meta {
+    background-color: var(--cor-conteudo);
+    display: flex;
+    margin: 0.5em 23em;
+    text-align: left;
+    flex-direction: column;
+    border: 0.1em solid white;
+    justify-content: center;
+    padding: 2em;
+}
+
+/*Cardápio*/
+.cardapio__titulo {
+    text-align: center;
+    font-size: 2em;
+    margin-left: 8em;
+    margin-top: 0.5em;
+}
+
+.cardapio {
+    display: flex;
+    margin: 0.5em 23em;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.cardapio__salgados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.cardapio__salgados__secao {
+    background-color: var(--cor-conteudo);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    border: 0.1em solid white;
+    padding: 2em 0;
+}
+
+.cardapio__lista {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0.5em 0.2em;
+}
+
+.cardapio__doces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.cardapio__doces__secao {
+    background-color: var(--cor-conteudo);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    border: 0.1em solid white;
+    padding: 2em 0;
+}
+
+.cardapio__bebidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.cardapio__bebidas__secao {
+    background-color: var(--cor-conteudo);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    border: 0.1em solid white;
+    padding: 2em 0;
 }
 
 
@@ -190,7 +288,7 @@ input {
     width: 5em;
 }
 
-.img__promo_contato{
+.img__promo_contato {
     height: 13.5em;
     width: 65em;
     margin: 0.5em 0;

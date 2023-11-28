@@ -11,7 +11,7 @@
 
 <body>
     <header class="cabecalho">
-        <img src="image/logo.png" alt="logo da pastelaria" class="cabecalho__logo">
+        <img src="image/logo/logo.png" alt="logo da pastelaria" class="cabecalho__logo">
         <h1 class="cabecalho__titulo">Pastel do Rick</h1>
         <ul class="cabecalho__menu">
             <li id="cabecalho__menu__item"><a href="index.html">Home</a></li>
@@ -24,38 +24,105 @@
     <img src="image/nave-rick.png" alt="nave do rick" id="nave__rick">
 
     <article class="conteudo">
-        <h2 class="conteudo__titulo">seja bem vindo, a melhor pastelaria do universo</h2>
-        <p>confira nossas promoções</p>
+        <h2 class="conteudo__titulo">seja bem vindo, a melhor pastelaria do universo.</h2>
         <img src="image/pastel-saboroso.jpg" alt="pastel gostoso hmmmm" id="conteudo__pastel">
+
+        <div class="conteudo__promo">
+            <div class="promo__texto">
+                <h3 class="promo__titulo">Promo do dia: </h3>
+                <p>Combo família na compra de 4 pastéis você leva um refrigerante 2l de sua escolha.</p>
+            </div>
+            <img src="image/promo.jpg" alt="promoção combo família" class="promo__img">
+        </div>
+
+        <h2>Em compras acima de 80 reais a tele entrega sai de graça, não perca tempo.</h2>
     </article>
 
+    <div class="depoimentos">
+        <h2>Aqui deixamos depoimentos de clientes satisfeitos:</h2>
+        <div>
+            <div class="carrosel">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+
+
+                    <div class="slide first">
+                        <img src="image/depoimentos/Chris_Pratt_comendo_pastel.png" alt="Depoimento do cliente"
+                            id="depoimentos__img">
+                    </div>
+                    <div class="slide">
+                        <img src="image/depoimentos/luciano-pastel.webp" alt="Depoimento do cliente"
+                            id="depoimentos__img">
+                    </div>
+                    <div class="slide">
+                        <img src="image/depoimentos/celso_pastel.png" alt="Depoimento do cliente" id="depoimentos__img">
+                    </div>
+                    <div class="slide">
+                        <img src="image/depoimentos/elige-pastel.jpg" alt="Depoimento do cliente" id="depoimentos__img">
+                    </div>
+                    <div class="slide">
+                        <img src="image/depoimentos/sk-pastel.jpg" alt="Depoimento do cliente" id="depoimentos__img">
+                    </div>
+
+                    <div class="navegacao__auto">
+                        <div class="auto__btn1"></div>
+                        <div class="auto__btn2"></div>
+                        <div class="auto__btn3"></div>
+                        <div class="auto__btn4"></div>
+                        <div class="auto__btn5"></div>
+                    </div>
+                </div>
+
+                <div class="navegacao__manual">
+                    <label for="radio1" class="manual__btn"></label>
+                    <label for="radio2" class="manual__btn"></label>
+                    <label for="radio3" class="manual__btn"></label>
+                    <label for="radio4" class="manual__btn"></label>
+                    <label for="radio5" class="manual__btn"></label>
+                </div>
+
+                <p id="depoimentos__txt">"This is the best pastel I haver had, pretty good with caldo de cana, I am
+                    looking
+                    forward to return to Brasil and visit Pastel do Rick again, muito bom, eu gosto."
+                    Chris Pratt.</p>
+            </div>
+
+        </div>
+    </div>
     <img src="image/rico_e_morte.png" alt="rick & morty" id="rick__morty">
+
+
     <footer class="rodape">
         <h3 class="rodape__titulo">Desenvolvido Por Eduardo</h3>
         <div class="rodape__linha">
             <div class="rodape__rede">
-                <img src="image/logo_whatsapp.png" alt="whatsapp" class="rodape__rede__logo">
+                <img src="image/logo/logo_whatsapp.png" alt="whatsapp" class="rodape__rede__logo">
                 <a href="https://web.whatsapp.com/" class="rede__texto">Whatsapp</a>
             </div>
             <div class="rodape__rede">
-                <img src="image/logo_instagram.png" alt="instagram" class="rodape__rede__logo">
+                <img src="image/logo/logo_instagram.png" alt="instagram" class="rodape__rede__logo">
                 <a href="https://www.instagram.com/" class="rede__texto">Instagram</a>
             </div>
         </div>
 
         <div class="rodape__linha">
             <div class="rodape__rede">
-                <img src="image/logo_facebook.png" alt="facebook" class="rodape__rede__logo">
+                <img src="image/logo/logo_facebook.png" alt="facebook" class="rodape__rede__logo">
                 <a href="https://www.facebook.com/" class="rede__texto">Facebook </a>
             </div>
             <div class="rodape__rede">
-                <img src="image/logo-telefone.png" alt="telefone" class="rodape__rede__telefone">
+                <img src="image/logo/logo-telefone.png" alt="telefone" class="rodape__rede__telefone">
                 <p>(51)40028922 </p>
             </div>
         </div>
 
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

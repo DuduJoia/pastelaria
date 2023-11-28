@@ -1,0 +1,198 @@
+:root {
+    --cor-cabecalho-rodape: #050505;
+    --cor-conteudo: #7C7C7C;
+    --cor-fonte: white;
+    --cor-hover: #B0B0B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--cor-fonte);
+}
+
+body {
+    background-image: url("image/galaxia.jpg");
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho-rodape);
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.1em solid white;
+}
+
+.cabecalho__logo {
+    height: 6.25em;
+    width: auto;
+    margin-left: 4em;
+
+}
+
+.cabecalho__titulo {
+    margin-top: 1em;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 0.75em;
+    margin-right: 4em;
+}
+
+#cabecalho__menu__item {
+    margin: 0 0.5em;
+    margin-top: 2.5em;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+    margin: em 0;
+}
+
+a:hover {
+    color: var(--cor-hover);
+
+}
+
+.conteudo {
+    background-color: var(--cor-conteudo);
+    display: grid;
+    margin: 0.5em 23em;
+    text-align: center;
+    border: 0.1em solid white;
+    justify-content: center;
+}
+
+.conteudo__titulo {
+    margin: 0.3em 0;
+    text-decoration: underline;
+}
+
+#conteudo__pastel {
+    margin-left: 2em;
+    height: 10em;
+    width: auto;
+    border: 0.1em solid white;
+}
+
+#rick__morty {
+    margin-left: -3em;
+    position: absolute;
+    scale: 0.9;
+    float: left;
+    bottom: 7em;
+}
+
+#nave__rick {
+    float: right;
+    scale: 0.6;
+    margin-right: -3em;
+    margin-top: -8em;
+
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-cabecalho-rodape);
+    border-top: 0.1em solid white;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.rodape__titulo {
+    margin: 1em 0;
+}
+
+.rodape__linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -10em;
+    margin-right: -10em;
+    margin-bottom: 1em;
+}
+
+.rodape__rede {
+    display: flex;
+}
+
+.rodape__rede__logo {
+    height: 2em;
+}
+
+.rede__texto{
+    margin-top: 0.45em;
+}
+
+.rodape__rede__telefone {
+    height: 1.3em;
+    margin-left: 12em;
+}
+
+.conteudo__titulo__contato {
+    margin: 0.5em 0
+}
+
+/*sobre nós*/
+
+.sn__historia{
+    background-color: var(--cor-conteudo);
+    display: flex;
+    margin: 0.5em 23em;
+    text-align: left;
+    flex-direction: column;
+    border: 0.1em solid white;
+    justify-content: center;
+    padding: 2em;
+}
+
+.sn__historia__texto{
+    font-size: 1.2em;
+}
+
+
+/*Contato*/
+
+#formulario {
+    display: grid;
+    justify-content: left;
+    text-align: left;
+    justify-content: space-between;
+}
+
+input {
+    margin: 0.75em;
+    color: black;
+    width: 25em;
+}
+
+#input__checkbox {
+    width: auto;
+}
+
+#link__termos {
+    text-decoration: underline;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5em 0;
+}
+
+.botao {
+    width: 5em;
+}
+
+.img__promo_contato{
+    height: 13.5em;
+    width: 65em;
+    margin: 0.5em 0;
+    margin-left: 27.5em;
+}

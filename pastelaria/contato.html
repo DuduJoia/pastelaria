@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Pastel do Rick | Contato</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <img src="image/logo/logo.png" alt="logo da pastelaria" class="cabecalho__logo">
-        <h1 class="cabecalho__titulo">Pastel do Rick</h1>
+        <div class="cabecalho__logo">
+            <img src="image/logo/logo.png" alt="logo da pastelaria" class="cabecalho__logo__logo" />
+            <h1 class="cabecalho__titulo">Pastel do Rick</h1>
+        </div>
         <ul class="cabecalho__menu">
             <li id="cabecalho__menu__item"><a href="index.html">Home</a></li>
-            <li id="cabecalho__menu__item"><a href="sobre_nos.html">Sobre Nós</a></li>
+            <li id="cabecalho__menu__item">
+                <a href="sobre_nos.html">Sobre Nós</a>
+            </li>
             <li id="cabecalho__menu__item"><a href="cardapio.html">Cardápio</a></li>
             <li id="cabecalho__menu__item"><a href="contato.html">Contato</a></li>
         </ul>
@@ -23,16 +28,18 @@
 
     <img src="image/nave-rick.png" alt="nave do rick" id="nave__rick">
 
-    <article class="conteudo">
-        <h2 class="conteudo__titulo__contato">Se cadastre para receber nossas maravilhosas promoções e se manter
+    <article class="conteudo__contato">
+        <h2 class="conteudo__contato__titulo">Se cadastre para receber nossas maravilhosas <br> promoções e se manter
             atualizado</h2>
+            <img src="image/rick-telefone.png" alt="Rick no telefone">
         <p>você poderá se desinscrever a qualquer momento</p>
+
         <form id="formulario">
-            <label>Nome <input type="text" name="nome" id="nome"></label>
-            <label>Email <input type="text" name="email" id="email"></label>
-            <label>Whatsapp <input type="tel" name="whatsapp" id="whatsapp"></label>
-            <label>Cidade <input type="text" name="cidade" id="cidade"></label>
-            <label>Endereço <input type="text" name="endereco" id="endereco"></label>
+            <label>Nome <input type="text" name="nome" id="nome" class="formulario__campo"></label>
+            <label>Email <input type="text" name="email" id="email" class="formulario__campo"></label>
+            <label>Whatsapp <input type="tel" name="whatsapp" id="whatsapp" class="formulario__campo"></label>
+            <label>Cidade <input type="text" name="cidade" id="cidade" class="formulario__campo"></label>
+            <label>Endereço <input type="text" name="endereco" id="endereco" class="formulario__campo"></label>
             <label><input type="checkbox" id="input__checkbox"> Ao se cadastrar, você está aceitando os nossos <a
                     href="termos.html" id="link__termos">termos de serviço</a> </label>
             <div class="botoes"> <input type="submit" value="enviar" class="botao" id="enviar">
@@ -43,7 +50,6 @@
 
     <img src="image/rico_e_morte.png" alt="rick & morty" id="rick__morty">
 
-    <img src="image/promo-contato.png" alt="promoção maravilhosa" class="img__promo_contato">
 
     <footer class="rodape">
         <h3 class="rodape__titulo">Desenvolvido Por Eduardo</h3>

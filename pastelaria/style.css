@@ -1,456 +1,528 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
-    --cor-cabecalho-rodape: #050505;
-    --cor-conteudo: #7C7C7C;
-    --cor-fonte: white;
-    --cor-hover: #B0B0B0;
+  --cor-cabecalho-rodape: #050505;
+  --cor-conteudo: #7c7c7c;
+  --cor-fonte: white;
+  --cor-hover: #b0b0b0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    color: var(--cor-fonte);
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--cor-fonte);
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("image/galaxia.jpg");
-    min-height: 100vh;
-    font: Montserrat;
+  background-image: url("image/galaxia.jpg");
+  min-height: 100vh;
+  font: Montserrat;
 }
 
 .cabecalho {
-    background-color: var(--cor-cabecalho-rodape);
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 0.1em solid white;
+  background-color: var(--cor-cabecalho-rodape);
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1.6px solid white;
 }
 
 .cabecalho__logo {
-    height: 6.25em;
-    width: auto;
-    margin-left: 4em;
+  font-size: 10px;
+  margin-left: -325px
+}
 
+.cabecalho__logo__logo {
+  height: 100px;
+  width: auto;
+  margin-bottom: -20px;
+  margin-left: 14px;
 }
 
 .cabecalho__titulo {
-    margin-top: 1em;
-    text-align: center;
+  margin-top: 16px;
+  text-align: center;
 }
 
 .cabecalho__menu {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-top: 0.75em;
-    margin-right: 4em;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 60px;
+  font-size: 16px;
+  margin-right: -310px;
+
 }
 
 #cabecalho__menu__item {
-    margin: 0 0.5em;
-    margin-top: 2.5em;
-    padding: 0;
+  margin: 0 16px;
+  margin-top: 40px;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: var(--cor-fonte);
-    margin: em 0;
+  text-decoration: none;
+  color: var(--cor-fonte);
+  margin: 0;
 }
 
 a:hover {
-    color: var(--cor-hover);
-
+  color: var(--cor-hover);
 }
 
 .conteudo {
-    background-color: var(--cor-conteudo);
-    display: grid;
-    margin: 0.5em 23em;
-    text-align: center;
-    border: 0.1em solid white;
-    justify-content: center;
+  background-color: var(--cor-conteudo);
+  display: grid;
+  margin: 8px 368px;
+  text-align: center;
+  border: 1.6px solid white;
+  justify-content: center;
+  height: 750px;
+  width: 1150px;
 }
 
 .conteudo__titulo {
-    margin: 0.3em 0;
-    text-decoration: underline;
+  margin: 4.8px 0;
+  text-decoration: underline;
 }
 
 .conteudo__promo {
-    display: flex;
-    margin: 1.5em;
+  display: grid;
+  margin: 24px;
+  justify-content: center;
 }
 
 .promo__texto {
-    margin: 1.5em 1em;
+  margin: 24px 16px;
 }
 
-.promo__titulo {}
-
 .promo__img {
-    border: 0.1em solid white;
+  border: 1.6px solid white;
 }
 
 #conteudo__pastel {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 10em;
-    border: 0.1em solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 160px;
+  border: 1.6px solid white;
 }
 
 #rick__morty {
-    margin-left: -30em;
-    position: absolute;
-    scale: 0.9;
-    float: left;
-    bottom: 10em;
+  position: absolute;
+  scale: 0.9;
+  float: left;
+  bottom: 160px;
 }
 
 #nave__rick {
-    float: right;
-    scale: 0.6;
-    margin-right: -3em;
-    margin-top: -8em;
-
+  float: right;
+  scale: 0.6;
+  margin-right: -48px;
+  margin-top: -128px;
 }
 
 .depoimentos {
-    background-color: var(--cor-conteudo);
-    display: grid;
-    margin: 1em 23em;
-    text-align: center;
-    border: 0.1em solid white;
-    justify-content: center;
+  background-color: var(--cor-conteudo);
+  display: grid;
+  margin: 16px 368px;
+  text-align: center;
+  border: 1.6px solid white;
+  justify-content: center;
+  height: 750px;
+  width: 1150px;
 }
 
 .carrosel {
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    overflow: hidden;
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
 }
 
 .slides {
-    width: 500%;
-    height: 400px;
-    display: flex;
+  width: 500%;
+  height: 400px;
+  display: flex;
 }
 
 .slides input {
-    display: none;
+  display: none;
 }
 
 .slide {
-    width: 20%;
-    position: relative;
-    transition: 2s;
+  width: 20%;
+  position: relative;
+  transition: 2s;
 }
 
 .slide img {
-    height: 550px;
+  height: 550px;
 }
 
 .navegacao__manual {
-    position: absolute;
-    width: 750px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 750px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
 }
 
 .manual__btn {
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 80px;
 }
 
 .manual__btn:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .manual__btn:hover {
-    background-color: white;
+  background-color: white;
 }
 
 #radio1:checked~.first {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 #radio2:checked~.first {
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 #radio3:checked~.first {
-    margin-left: -40%;
+  margin-left: -40%;
 }
 
 #radio4:checked~.first {
-    margin-left: -60%;
+  margin-left: -60%;
 }
 
 #radio5:checked~.first {
-    margin-left: -80%;
+  margin-left: -80%;
 }
 
 #depoimentos__img {
-    scale: 0.8;
-    border: 0.1em solid white;
+  scale: 0.8;
+  border: 1.6px solid white;
 }
 
 #depoimentos__txt {
-    margin: 4em 0;
-    font-size: 1.5em;
+  margin: 100px 0;
+  font-size: 24px;
 }
 
 .navegacao__auto div {
-    border: 2px solid blue;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin-top: 80px;
 }
 
 .navegacao__auto {
-    position: absolute;
-    width: 750px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
+  position: absolute;
+  width: 750px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
 }
 
 .navegacao__auto div:not(:last-child) {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 #radio1:checked~.navegacao__auto .auto__btn1 {
-    background-color: white;
+  background-color: white;
 }
 
 #radio2:checked~.navegacao__auto .auto__btn2 {
-    background-color: white;
+  background-color: white;
 }
 
 #radio3:checked~.navegacao__auto .auto__btn3 {
-    background-color: white;
+  background-color: white;
 }
 
 #radio4:checked~.navegacao__auto .auto__btn4 {
-    background-color: white;
+  background-color: white;
 }
 
 #radio5 :checked~.navegacao__auto .auto__btn5 {
-    background-color: white;
+  background-color: white;
 }
 
-
 .rodape {
-    bottom: 0;
-    width: 100%;
-    background-color: var(--cor-cabecalho-rodape);
-    border-top: 0.1em solid white;
-    display: grid;
-    justify-content: space-evenly;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--cor-cabecalho-rodape);
+  border-top: 1.6px solid white;
+  display: grid;
+  justify-content: space-evenly;
+  margin-top: 48px;
 }
 
 .rodape__titulo {
-    margin: 1em 0;
+  margin: 16px 0;
+  text-align: center;
 }
 
 .rodape__linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: -10em;
-    margin-right: -10em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -490px;
+  margin-right: -455px;
+  margin-bottom: 16px;
 }
 
 .rodape__rede {
-    display: flex;
+  display: flex;
 }
 
 .rodape__rede__logo {
-    height: 2em;
+  height: 32px;
 }
 
 .rede__texto {
-    margin-top: 0.45em;
+  margin-top: 8.5px;
 }
 
 .rodape__rede__telefone {
-    height: 1.3em;
-    margin-left: 12em;
+  height: 20.8px;
+  margin-left: 192px;
 }
 
-.conteudo__titulo__contato {
-    margin: 0.5em 0
+.conteudo__contato{
+  background-color: var(--cor-conteudo);
+  display: grid;
+  margin: 8px 368px;
+  text-align: left;
+  border: 1.6px solid white;
+  justify-content: center;
+  height: 750px;
+  width: 1150px;
+
+}
+
+.conteudo__contato img{
+  width: 400px;
+  border: 1.6px solid white;
+}
+
+.conteudo__contato__titulo {
+  margin: 16px 0;
 }
 
 /*sobre nós*/
 
 .sn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 12px;
 }
 
 .sn__historia {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    margin: 0.5em 23em;
-    text-align: left;
-    flex-direction: column;
-    border: 0.1em solid white;
-    justify-content: center;
-    padding: 2em;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  margin: 8px 0;
+  margin-left: 370px;
+  text-align: left;
+  flex-direction: column;
+  border: 1.6px solid white;
+  justify-content: center;
+  padding: 32px;
+  width: 1150px;
 }
 
 .sn__texto {
-    font-size: 1.2em;
+  font-size: 19.2px;
 }
 
 .sn__objetivo {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    margin: 0.5em 23em;
-    text-align: left;
-    flex-direction: column;
-    border: 0.1em solid white;
-    justify-content: center;
-    padding: 2em;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  margin: 8px 0px;
+  margin-left: 370px;
+  text-align: left;
+  flex-direction: column;
+  border: 1.6px solid white;
+  justify-content: center;
+  padding: 32px;
+  width: 1150px;
 }
 
 .sn__meta {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    margin: 0.5em 23em;
-    text-align: left;
-    flex-direction: column;
-    border: 0.1em solid white;
-    justify-content: center;
-    padding: 2em;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  margin: 8px 0;
+  margin-left: 370px;
+  text-align: left;
+  flex-direction: column;
+  border: 1.6px solid white;
+  justify-content: center;
+  padding: 32px;
+  margin-bottom: 46.4px;
+  width: 1150px;
 }
 
 /*Cardápio*/
 .cardapio__titulo {
-    text-align: center;
-    font-size: 2em;
-    margin-left: 8em;
-    margin-top: 0.5em;
+  text-align: center;
+  font-size: 32px;
+  margin-left: 350px;
+  margin-top: 8px;
 }
 
 .cardapio {
-    display: flex;
-    margin: 0.5em 23em;
-    text-align: center;
-    justify-content: space-evenly;
+  display: flex;
+  margin: 8px 368px;
+  text-align: center;
+  justify-content: space-evenly;
+  height: 700px;
+}
+
+.cardapio h3 {
+  background-image: linear-gradient(43deg, #A7CB54 0%, #5CAD4A 20%, #208D45 40%, #5CAD4A 50%, #208D45 60%, #5CAD4A 80%, #A7CB54 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .cardapio__salgados {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 32px;
+  margin-left: 63px;
+  margin-right: 102.5px;
 }
 
 .cardapio__salgados__secao {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    flex-direction: column;
-    margin: 0.5em;
-    border: 0.1em solid white;
-    padding: 2em 0;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border: 1.6px solid white;
+  border-radius: 8px;
+  padding: 32px 0px;
+  height: 450px;
+  width: 300px;
+  margin-left: -68px;
 }
 
 .cardapio__lista {
-    font-size: 1.5em;
-    list-style: none;
-    margin: 0.5em 0.2em;
+  font-size: 19px;
+  list-style: none;
+  margin: 20px 3.2px;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.cardapio__lista li {
+  margin-bottom: 8px;
 }
 
 .cardapio__doces {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 32px;
+  margin-right: 102.5px;
 }
 
 .cardapio__doces__secao {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    flex-direction: column;
-    margin: 0.5em;
-    border: 0.1em solid white;
-    padding: 2em 0;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border: 1.6px solid white;
+  border-radius: 8px;
+  padding: 32px 0px;
+  height: 450px;
+  width: 300px;
 }
 
 .cardapio__bebidas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 32px;
 }
 
 .cardapio__bebidas__secao {
-    background-color: var(--cor-conteudo);
-    display: flex;
-    flex-direction: column;
-    margin: 0.5em;
-    border: 0.1em solid white;
-    padding: 2em 0;
+  background-color: var(--cor-conteudo);
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border: 1.6px solid white;
+  border-radius: 8px;
+  padding: 32px 0px;
+  height: 450px;
+  width: 300px;
 }
-
 
 /*Contato*/
 
 #formulario {
-    display: grid;
-    justify-content: left;
-    text-align: left;
-    justify-content: space-between;
+  display: grid;
+  justify-content: left;
+  text-align: left;
+}
+
+.formulario__campo {
+  margin-left: 40px;
+}
+
+#whatsapp {
+  margin-left: 13px;
+}
+
+#cidade {
+  margin-left: 32px;
+}
+
+#endereco {
+  margin-left: 18px;
 }
 
 input {
-    margin: 0.75em;
-    color: black;
-    width: 25em;
+  margin: 6px;
+  color: black;
+  width: 400px;
 }
 
 #input__checkbox {
-    width: auto;
+  width: auto;
 }
 
 #link__termos {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .botoes {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2.5em 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px 0;
 }
 
 .botao {
-    width: 8em;
-    height: 2.5em;
-    background-color: var(--cor-cabecalho-rodape);
-    color: white;
-    border-radius: 1.2em;
-    font-family: montserrat;
-    cursor: pointer;
+  width: 128px;
+  height: 40px;
+  background-color: var(--cor-cabecalho-rodape);
+  color: white;
+  border-radius: 19.2px;
+  font-family: montserrat;
+  cursor: pointer;
 }
 
-.img__promo_contato {
-    height: 13.5em;
-    width: 65em;
-    margin: 0.5em 0;
-    margin-left: 27.5em;
+.img__promo__contato {
+  margin: 8px 0;
+  margin-left: 440px;
+  height: 100px;
 }

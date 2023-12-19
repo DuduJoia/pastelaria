@@ -21,19 +21,27 @@ return;
         return;
     }
 
-    if(whatsappInput === ""){
+    if(whatsappInput.value === ""){
         alert("Por favor, preencha seu whatsapp")
+        return;
     }
 
-    if(cidadeInput === ""){
+    if(cidadeInput.value === ""){
         alert("Por favor, preencha sua cidade")
+        return;
     }
+
+    if(enderecoInput.value === ""){
+        alert("Por favor, preencha seu endereço")
+        return;
+    }
+
     formulario.submit();
 });
 
 function validaEmail(email){
     const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-z-A-Z]+\.{2,}$/
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     );
 
     if(emailRegex.test(email)) {
@@ -42,3 +50,4 @@ function validaEmail(email){
 
     return false;
 }
+
